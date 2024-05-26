@@ -5,10 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D Wave Gallery</title>
     <link rel="stylesheet" href="https://use.typekit.net/plg4ufk.css">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <script src="https://kit.fontawesome.com/8f1f53b08b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="items"></div>
+    <div class="flipbook centered" id="flipbook">
+        <div class="leaf">
+            <div class="page front title external" style="background-color: #e7bf51;">
+                <div class="booklet-title">
+                    <h1>Dog Days</h1>
+                    <em>A Book of Images</em>
+                </div>
+                <h3 class="author">Photos and Design by Maggie Flinn</h3>
+            </div>
+            <div class="page back" style="background-color: #2a9d8f;">
+                <div class="page-number">1</div>
+                <img src="images/Apollo-Athena_1.png" alt="dogs" style="width: 100%">
+            </div>
+        </div>
+        <div class="leaf">
+            <div class="page front" style="background-color: #8311b8;">
+                <div class="page-number">2</div>
+                <img src="images/Athena_1.png" alt="dog" style="width: 100%">
+            </div>
+            <div class="page back">
+                <div class="page-number">3</div>
+                <img src="images/Athena_2.png" alt="dog" style="width: 100%">
+            </div>
+        </div>
+        <div class="leaf">
+            <div class="page front">
+                <div class="page-number">4</div>
+                <img src="images/Athena_3.png" alt="dog" style="width: 100%">
+            </div>
+            <div class="page back">
+                <div class="page-number">5</div>
+                <img src="images/Athena_4.png" alt="dog" style="width: 100%">
+            </div>
+        </div>
+        <div class="leaf">
+            <div class="page front">
+                <div class="page-number">6</div>
+                <img src="images/Athena_5.png" alt="dog" style="width: 100%">
+            </div>
+            <div class="page back">
+                <div class="page-number">7</div>
+                <img src="images/Apollo_1.png" alt="dog" style="width: 100%">
+            </div>
+        </div>
+        <div class="leaf">
+            <div class="page front">
+                <div class="page-number">8</div>
+                <img src="images/Athena_6.png" alt="dog" style="width: 100%">
+            </div>
+            <div class="page back">
+                <div class="page-number">9</div>
+                <img src="images/Athena_7.png" alt="dog" style="width: 100%">
+            </div>
+        </div>
+        <div class="leaf">
+            <div class="page front">
+                <div class="page-number">10</div>
+                <img src="images/Athena_8.png" alt="dog" style="width: 100%">
+            </div>
+            <div class="page back">
+                <div class="page-number">11</div>
+                <img src="images/Athena_9.png" alt="dog" style="width: 100%">
+            </div>
+        </div>
+        <div class="leaf">
+            <div class="page front">
+                <div class="page-number">12</div>
+                <img src="images/Athena_10.png" alt="dog" style="width: 100%">
+            </div>
+            <div class="page back external">
+                <h2>Photos taken in late May 2024 in Central Virginia</h2>
+            </div>
+        </div>
     </div>
+    <div class="controls centered">
+        <button id="prev">
+            <i class="fa-solid fa-chevron-left"></i> Previous
+        </button>
+        <button id="next">
+            Next <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <script src="JS/DOM.js"></script>
+    <script src="JS/code.js"></script>
 </body>
 </html>
